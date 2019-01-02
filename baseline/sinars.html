@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>index</title> 
+<style type="text/css">
+<!--
+.style4 {font-size: 36px; font-weight: bold; }
+.style6 {font-size: 24px; font-weight: bold; }
+.style7 {font-size: 24px}
+-->
+</style>
+</head> 
+<body> 
+
+<table width="740" border="0" align="center" cellpadding="0" cellspacing="0"> 
+  <tr> 
+    <td height="150" align="center"><span class="style4"><img src="accounting.jpg" width="740" height="310"></span></td> 
+  </tr> 
+  <tr> 
+    <td height="30"></td> 
+  </tr> 
+  <tr> 
+    <td height="250"><table width="740" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td width="200" height="250" valign="top"><table width="200" border="0" cellspacing="0"    cellpadding="0"> 
+          <tr> 
+            <td><a href="index.php?accounting=home">Home</a></a></td> 
+          </tr>
+          <tr>
+            <td><a href="index.php?accounting=profile">Profile Sinar Accounting</a> </td>
+          </tr>
+          <tr>
+            <td><a href="index.php?accounting=testimonial">Testimonial</a></td>
+          </tr>
+          <tr>
+            <td><a href="index.php?accounting=download">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href="index.php?accounting=contact">Contact Us</a> </td>
+          </tr> 
+        </table>	</td> 
+        <td width="794"> 
+		  
+        </div> 
+<?
+$file = $_GET['accounting'];
+	if(isset($file)){
+	  $file =  $file.".php";
+	   include($file);
+}
+?>
+Welcome
+</td> 
+      </tr> 
+    </table></td> 
+  </tr> 
+  <tr> 
+    <td height="50"><div align="center" class="style4"><img src="accounting2.jpg" width="740" height="115"></div></td> 
+  </tr> 
+</table> 
+<p align="center"><strong>Sina Accounting Indonesia 2018 </strong></p>
+</body> 
+</html>
